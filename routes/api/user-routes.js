@@ -7,13 +7,13 @@ const {
     deleteUser
 } = require('../../controllers/user-controller')
 
-// /api/user
+// /api/users
 router
     .route('/')
     .get(getAllUsers)
     .post(createUser)
 
-// /api/user/:id
+// /api/users/:id
 router
     .route('/:id')
     .get(getUserById)
