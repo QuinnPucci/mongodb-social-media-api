@@ -46,7 +46,7 @@ const ThoughtSchema = new Schema(
         type: String,
         required: true,
       },
-      // use ReactionSchema to validate data for a reply
+      // use ReactionSchema to validate data for a reaction
       reactions: [ReactionSchema]
     },
     {

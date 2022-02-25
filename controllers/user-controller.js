@@ -1,4 +1,4 @@
-const { User } = require('../models')
+const { User, Thought } = require('../models')
 
 const userController = {
     // get all users
@@ -42,6 +42,10 @@ const userController = {
         .then(dbUserData => res.json(dbUserData))
         .catch(err => res.json(err));
     }
+
+    // add friend?
+
+    // delete friend?
 }
 
 module.exports = userController
