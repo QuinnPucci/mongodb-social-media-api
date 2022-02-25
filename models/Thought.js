@@ -1,7 +1,7 @@
 const { Schema, model, Types } = require('mongoose'); // what is types? do I need it?
 const dateFormat = require('../utils/dateFormat');
 
-const ReplySchema = new Schema(
+const ReactionSchema = new Schema(
     {
       // set custom id to avoid confusion with parent comment _id
       reactionId: {
@@ -12,7 +12,7 @@ const ReplySchema = new Schema(
         type: String,
         required: true
       },
-      writtenBy: {
+      username: {
         type: String,
         required: true,
         trim: true
@@ -42,7 +42,7 @@ const ThoughtSchema = new Schema(
         default: Date.now,
         get: createdAtVal => dateFormat(createdAtVal)
       },
-      writtenBy: {
+      username: {
         type: String,
         required: true,
       },

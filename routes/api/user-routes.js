@@ -20,7 +20,7 @@ router
     .put(updateUser)
     .delete(deleteUser)
 
-// /api/user/id/friends/:friendId
+// /api/users/id/friends/:id
 // router
 //     .post()
 //     .delete()
