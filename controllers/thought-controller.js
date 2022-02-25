@@ -36,7 +36,7 @@ const thoughtController = {
     },
 
     // create a reaction
-    createReply({ params, body}, res) {
+    createReaction({ params, body}, res) {
         Thought.findOneAndUpdate (
 
         )
