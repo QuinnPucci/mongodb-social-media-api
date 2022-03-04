@@ -1,4 +1,4 @@
-const { Schema, model, Types } = require('mongoose'); // what is types? do I need it?
+const { Schema, model, Types } = require('mongoose'); 
 const dateFormat = require('../utils/dateFormat');
 
 const ReactionSchema = new Schema(
@@ -54,7 +54,7 @@ const ThoughtSchema = new Schema(
         virtuals: true,
         getters: true
       },
-      id: false // false or true?
+      id: false 
     }
   );
 
