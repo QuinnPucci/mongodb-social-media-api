@@ -2,7 +2,7 @@ const { Schema, model } = require("mongoose")
 const dateFormat = require('../utils/dateFormat')
 
 const UserSchema = new Schema ({
-    userName: {
+    username: {
         type: String,
         required: true,
         unique: true,
@@ -11,7 +11,7 @@ const UserSchema = new Schema ({
     email: {
         type: String,
         required: true,
-        validate: [validateEmail, "Please fill a valid email address."],
+        unique: true,
         match: [
         /^\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/,
         "Please fill a valid email address",
